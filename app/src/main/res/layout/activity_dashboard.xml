@@ -20,7 +20,7 @@
             android:orientation="vertical"
             android:id="@+id/toolbar"
             android:background="@color/colorPrimary"
-            android:layout_height="100dp">
+            android:layout_height="wrap_content">
 
 
         <RelativeLayout
@@ -71,29 +71,20 @@
                 <android.support.design.widget.TabLayout
                     android:id="@+id/_dashboard_tabs"
                     android:layout_width="match_parent"
-                    android:layout_height="60dp"
+                    android:layout_height="50dp"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
-                    android:layout_marginTop="10dp"
                     android:clipToPadding="false"
                     app:tabBackground="@color/colorPrimary"
                     app:tabGravity="fill"
+                    app:tabMode="scrollable"
                     app:tabIndicatorColor="#696969"
-                    app:tabMode="fixed"
                     app:tabSelectedTextColor="#ffffff"
                     app:tabTextColor="@color/color_white">
 
                 </android.support.design.widget.TabLayout>
 
-                <android.support.v4.view.ViewPager
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:id="@+id/dashboard_viewpager"
-                    android:layout_alignParentStart="true"
-                    android:layout_alignParentTop="true"
-                    app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-                </android.support.v4.view.ViewPager>
 
             </LinearLayout>
 
@@ -109,7 +100,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
+        <android.support.v4.view.ViewPager
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/dashboard_viewpager"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
+        </android.support.v4.view.ViewPager>
     </RelativeLayout>
 
 

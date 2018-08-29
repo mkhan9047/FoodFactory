@@ -21,7 +21,7 @@
         <activity
             android:name=".ActivityPackage.SignupActivity"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".ActivityPackage.DashboardActivity"></activity>
+        <activity android:name=".ActivityPackage.DashboardActivity" android:theme="@style/AppTheme.NoActionBar"/>
     </application>
 
 </manifest>
