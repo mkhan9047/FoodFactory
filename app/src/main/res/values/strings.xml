@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">FoodFactory</string>
     <string name="loren_ipsum">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

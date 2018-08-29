@@ -3,28 +3,29 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#E93751"
     android:orientation="vertical"
-    tools:context=".ActivityPackage.LoginActivity">
+    android:background="#E93751"
+    android:layout_height="match_parent"
+    tools:context=".ActivityPackage.SignupActivity">
 
 
 
     <ImageView
         android:layout_width="230dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="5dp"
         android:layout_height="70dp"
         android:scaleType="centerInside"
         android:layout_gravity="center_horizontal"
         android:src="@drawable/main_logo"
-       />
+        />
+
 
     <TextView
         android:textColor="@color/color_white"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:text="Log In Here"
+        android:text="Register Here"
         android:textSize="20sp"
         />
 
@@ -43,8 +44,8 @@
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:layout_width="match_parent"
-        app:cardElevation="8dp"
         app:cardCornerRadius="5dp"
+        app:cardElevation="8dp"
         android:clipChildren="false"
         android:clipToPadding="false"
         android:divider="@android:color/transparent"
@@ -68,7 +69,7 @@
                 android:divider="@android:color/transparent"
                 android:dividerHeight="0.0px"
                 android:foreground="?android:attr/selectableItemBackground"
-                app:cardElevation="2dp">
+                app:cardElevation="8dp">
 
                 <!--write food name edittext for input food name-->
                 <EditText
@@ -77,8 +78,7 @@
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
                     android:background="@android:color/transparent"
-                    android:hint="Username"
-                    android:paddingStart="5dp"
+                    android:hint="Name"
                     android:singleLine="true"
                     android:textSize="17sp" />
 
@@ -95,7 +95,35 @@
                 android:divider="@android:color/transparent"
                 android:dividerHeight="0.0px"
                 android:foreground="?android:attr/selectableItemBackground"
-                app:cardElevation="2dp">
+
+                app:cardElevation="8dp">
+
+                <!--write food name edittext for input food name-->
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:inputType="textPersonName"
+                    android:background="@android:color/transparent"
+                    android:hint="Username"
+                    android:singleLine="true"
+                    android:textSize="17sp" />
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="8dp"
+                android:clickable="true"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="0.0px"
+                android:foreground="?android:attr/selectableItemBackground"
+
+                app:cardElevation="8dp">
 
                 <!--write food name edittext for input food name-->
                 <EditText
@@ -105,42 +133,50 @@
                     android:inputType="textPassword"
                     android:background="@android:color/transparent"
                     android:hint="Password"
-                    android:paddingStart="5dp"
                     android:singleLine="true"
                     android:textSize="17sp" />
+
             </android.support.v7.widget.CardView>
 
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_gravity="end"
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
                 android:layout_margin="8dp"
-                android:layout_height="wrap_content"
-                android:text="Forgot Password?"
-                />
+                android:clickable="true"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="0.0px"
+                android:foreground="?android:attr/selectableItemBackground"
+
+                app:cardElevation="8dp">
+
+                <!--write food name edittext for input food name-->
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:inputType="number"
+                    android:background="@android:color/transparent"
+                    android:hint="Mobile No"
+                    android:singleLine="true"
+                    android:textSize="17sp" />
+
+            </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.AppCompatButton
                 android:id="@+id/btn_login"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
-                android:onClick="onLogIn"
                 android:padding="5dp"
                 android:background="@color/color_btn"
                 android:text="Submit"
                 android:textColor="#FFFF"
                 android:textSize="12sp" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_margin="8dp"
-                android:layout_height="wrap_content"
-                android:textSize="17sp"
-                android:id="@+id/login_signup_text"
-                android:clickable="true"
-                android:text="Don't have any accounts?SignUp"
-                />
+
 
         </LinearLayout>
 
@@ -149,7 +185,7 @@
     <ImageView
         android:layout_gravity="center_horizontal"
         android:layout_width="match_parent"
-   android:scaleType="centerCrop"
+        android:scaleType="centerCrop"
         android:layout_marginStart="28dp"
         android:layout_marginEnd="28dp"
         android:layout_height="30dp"
@@ -218,7 +254,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Log in with facebook"
+                            android:text="Signup with Facebook"
                             android:textSize="11sp"
                             android:textColor="@color/color_white"
                             />
@@ -287,7 +323,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Log in with Twitter"
+                            android:text="Signup with Twitter"
                             android:textSize="11sp"
                             android:textColor="@color/color_white"
                             />
@@ -304,6 +340,7 @@
 
         </LinearLayout>
     </LinearLayout>
+
 
 
 </LinearLayout>
