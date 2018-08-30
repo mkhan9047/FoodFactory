@@ -1,4 +1,4 @@
-package com.itechsoftsolutions.foodfactory.FragmentPackage;
+package com.foodapp.foodfactory.FragmentPackage;
 
 
 import android.os.Bundle;
@@ -7,15 +7,15 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.itechsoftsolutions.foodfactory.R;
+import com.foodapp.foodfactory.R;
 
 /**
  * A simple {@link Fragment} subclass.
  */
-public class HomeFragment extends Fragment {
+public class MoreFragment extends Fragment {
 
 
-    public HomeFragment() {
+    public MoreFragment() {
         // Required empty public constructor
     }
 
@@ -24,7 +24,7 @@ public class HomeFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_home, container, false);
+        return inflater.inflate(R.layout.fragment_more, container, false);
     }
 
 }

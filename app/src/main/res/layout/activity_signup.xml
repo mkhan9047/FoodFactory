@@ -6,7 +6,7 @@
     android:orientation="vertical"
     android:background="#E93751"
     android:layout_height="match_parent"
-    tools:context=".ActivityPackage.SignupActivity">
+    tools:context="com.foodapp.foodfactory.ActivityPackage.SignupActivity">
 
 
 

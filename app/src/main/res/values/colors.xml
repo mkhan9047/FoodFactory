@@ -7,4 +7,6 @@
     <color name="color_white">#FCFCFC</color>
     <color name="color_fb">#3145B8</color>
     <color name="color_twitter">#0691F4</color>
+    <color name="transparent_grey">	#50707070</color>
+<color name="color_balck">#000000</color>
 </resources>

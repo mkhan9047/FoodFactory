@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.itechsoftsolutions.foodfactory">
+    package="com.foodapp.foodfactory">
 
     <application
         android:allowBackup="true"
@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".ActivityPackage.LoginActivity"
+            android:name="com.foodapp.foodfactory.ActivityPackage.LoginActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -19,9 +19,9 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ActivityPackage.SignupActivity"
+            android:name="com.foodapp.foodfactory.ActivityPackage.SignupActivity"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".ActivityPackage.DashboardActivity" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name="com.foodapp.foodfactory.ActivityPackage.DashboardActivity" android:theme="@style/AppTheme.NoActionBar"/>
     </application>
 
 </manifest>

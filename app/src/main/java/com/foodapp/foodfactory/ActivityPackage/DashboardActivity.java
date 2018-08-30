@@ -1,4 +1,4 @@
-package com.itechsoftsolutions.foodfactory.ActivityPackage;
+package com.foodapp.foodfactory.ActivityPackage;
 
 import android.content.Intent;
 import android.support.design.widget.TabLayout;
@@ -6,13 +6,13 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-import com.itechsoftsolutions.foodfactory.AdapterPackage.DashboardViewpagerAdapter;
-import com.itechsoftsolutions.foodfactory.FragmentPackage.HomeFragment;
-import com.itechsoftsolutions.foodfactory.FragmentPackage.MenuFragment;
-import com.itechsoftsolutions.foodfactory.FragmentPackage.MoreFragment;
-import com.itechsoftsolutions.foodfactory.FragmentPackage.ReservationFragment;
-import com.itechsoftsolutions.foodfactory.FragmentPackage.ServicesFragment;
-import com.itechsoftsolutions.foodfactory.R;
+import com.foodapp.foodfactory.AdapterPackage.DashboardViewpagerAdapter;
+import com.foodapp.foodfactory.FragmentPackage.HomeFragment;
+import com.foodapp.foodfactory.FragmentPackage.MenuFragment;
+import com.foodapp.foodfactory.FragmentPackage.MoreFragment;
+import com.foodapp.foodfactory.FragmentPackage.ReservationFragment;
+import com.foodapp.foodfactory.FragmentPackage.ServicesFragment;
+import com.foodapp.foodfactory.R;
 
 public class DashboardActivity extends AppCompatActivity {
 

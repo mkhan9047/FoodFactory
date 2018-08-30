@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="#E93751"
     android:orientation="vertical"
-    tools:context=".ActivityPackage.LoginActivity">
+    tools:context="com.foodapp.foodfactory.ActivityPackage.LoginActivity">
 
 
 

@@ -1,9 +1,9 @@
-package com.itechsoftsolutions.foodfactory.ActivityPackage;
+package com.foodapp.foodfactory.ActivityPackage;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-import com.itechsoftsolutions.foodfactory.R;
+import com.foodapp.foodfactory.R;
 
 public class SignupActivity extends AppCompatActivity {
 
