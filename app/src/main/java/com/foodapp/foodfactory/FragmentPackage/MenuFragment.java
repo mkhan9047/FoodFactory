@@ -55,8 +55,9 @@ public class MenuFragment extends Fragment {
         MenuIndicatorBuilder();
 
 
-        adapter = new MenuAdapter(foodModels, foodModels.size(), menuIndicatorList.get(0));
+        adapter = new MenuAdapter(FilterData(foodModels, "DESSERT"), foodModels.size(), menuIndicatorList.get(0));
         menuRecycler.setAdapter(adapter);
+        FoodModelBuilder();
         MenuIndicatorAdapter indicatorAdapter = new MenuIndicatorAdapter(getActivity(), menuIndicatorList, getListerner());
         menuIndicatorRecycler.setAdapter(indicatorAdapter);
 
@@ -126,7 +127,6 @@ public class MenuFragment extends Fragment {
     }
 
     private void MenuIndicatorBuilder() {
-
         menuIndicatorList.add("DESSERT");
         menuIndicatorList.add("BURGER");
         menuIndicatorList.add("SOUP");

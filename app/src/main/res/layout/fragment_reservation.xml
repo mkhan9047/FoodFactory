@@ -1,15 +1,172 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
     tools:context=".FragmentPackage.ReservationFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:text="Reservation" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_margin="8dp"
+        android:orientation="horizontal"
+        android:layout_height="150dp">
 
-</RelativeLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="4dp"
+            android:layout_height="match_parent">
+<android.support.v7.widget.CardView
+    android:layout_width="match_parent"
+    app:cardElevation="5dp"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Table Style"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="8dp"
+                android:layout_height="match_parent">
+                <!--first porting of select table -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Single"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:textSize="15sp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/style_table_item_shape_bg_stroke"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Single"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:textSize="15sp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/style_table_item_shape_bg_stroke"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Single"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:textSize="15sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/style_table_item_shape_bg_stroke"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="8dp"
+                android:layout_height="match_parent">
+                <!--second portion of select table -->
+                <!--first porting of select table -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Single"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:textSize="15sp"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/color_white"
+                    android:background="@drawable/menu_indicator_shape"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Single"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:textSize="15sp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/style_table_item_shape_bg_stroke"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Single"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:textSize="15sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/style_table_item_shape_bg_stroke"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_marginStart="4dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                app:cardElevation="5dp"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                </LinearLayout>
+
+
+
+            </android.support.v7.widget.CardView>
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    
+    
+    
+    
+</LinearLayout>
