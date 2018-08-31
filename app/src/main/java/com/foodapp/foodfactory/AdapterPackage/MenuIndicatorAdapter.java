@@ -9,28 +9,20 @@ import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.foodapp.foodfactory.ItemClickListener;
+import com.foodapp.foodfactory.ListenerPackage.ItemClickListener;
 import com.foodapp.foodfactory.R;
 
-import java.net.CookieHandler;
-import java.util.ArrayList;
 import java.util.List;
 
 public class MenuIndicatorAdapter extends RecyclerView.Adapter<MenuIndicatorAdapter.MenuIndicatorHolder> {
 
-    private List<String> list = new ArrayList<>();
+    private List<String> list;
     private Context context;
     private int row_index = 0;
     private ItemClickListener listener;
 
-    public MenuIndicatorAdapter(Context context, ItemClickListener listener) {
-        list.add("DESSERT");
-        list.add("SOUP");
-        list.add("BURGER");
-        list.add("COFFEE");
-        list.add("PASTY");
-        list.add("THAI");
-        list.add("CHINESE");
+    public MenuIndicatorAdapter(Context context, List<String> list, ItemClickListener listener) {
+        this.list = list;
         this.context = context;
         this.listener = listener;
     }

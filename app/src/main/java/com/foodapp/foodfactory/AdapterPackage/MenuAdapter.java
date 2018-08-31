@@ -18,39 +18,38 @@ import java.util.List;
 
 public class MenuAdapter extends RecyclerView.Adapter<MenuAdapter.MenuHolder> {
 
-    private List<FoodModel> models = new ArrayList<>();
+    private List<FoodModel> models;
     private int Count;
+    private String type;
 
 
-    public MenuAdapter(List<FoodModel> models, int count) {
+    public MenuAdapter(List<FoodModel> models, int count, String type) {
         this.models = models;
         this.Count = count;
+        this.type = type;
     }
 
     @NonNull
     @Override
     public MenuHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.menu_recycler_row,parent,false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.menu_recycler_row, parent, false);
         return new MenuHolder(view);
     }
 
     @SuppressLint("DefaultLocale")
     @Override
     public void onBindViewHolder(@NonNull MenuHolder holder, int position) {
-
         holder.name.setText(models.get(position).getName());
         holder.ratingBar.setRating(models.get(position).getRating());
-        holder.rating_count.setText(String.format("(%d)",models.get(position).getRatingCount()));
+        holder.rating_count.setText(String.format("(%d)", models.get(position).getRatingCount()));
         holder.imageView.setImageResource(models.get(position).getImage());
         holder.desc.setText(models.get(position).getDes());
         holder.price.setText(String.format("$%.2f", models.get(position).getPrice()));
-
-
     }
 
     @Override
     public int getItemCount() {
-        return Count;
+        return models.size();
     }
 
 
@@ -72,4 +71,15 @@ public class MenuAdapter extends RecyclerView.Adapter<MenuAdapter.MenuHolder> {
         }
 
     }
+
+
+    public void ChangeItems(List<FoodModel> list) {
+        models.clear();
+        models = list;
+
+    }
+
+
+
+
 }

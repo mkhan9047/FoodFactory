@@ -48,6 +48,7 @@ public class RecommendedFoodAdapter extends RecyclerView.Adapter<RecommendedFood
         holder.price.setText(String.format("$%.2f", models.get(position).getPrice()));
 
 
+
     }
 
     @Override
